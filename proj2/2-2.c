@@ -9,7 +9,7 @@ char buf2[]="ABCDEFGHIJ";
 int main(void)
 {
 int fd;
-if((fd=create("file.hole",FILE_MODE))<0)
+if((fd=creat("file.hole",FILE_MODE))<0)
 err_sys("creat error");
 
 if(write(fd,buf1,10)!=10)
